@@ -1,16 +1,16 @@
 # cyberWriter
 
-**Markdown that ships.** A native macOS editor for writers, researchers, and engineers — turns Markdown into publication-ready PDFs, Word docs, and HTML with zero external dependencies. Built in Swift and SwiftUI.
+**Markdown that ships.** A native macOS editor for writers, researchers, and engineers - turns Markdown into publication-ready PDFs, Word docs, and HTML with zero external dependencies. Built in Swift and SwiftUI.
 
 ![cyberWriter](docs/screenshots/hero1.png)
 
 ## Download
 
-- **[Mac App Store](https://apps.apple.com/us/app/cyberwriter/id6758079118?mt=12)** — automatic updates via the App Store
-- **[Direct Download](https://github.com/uncSoft/cyberwriter-app/releases/latest)** — same app, Sparkle auto-updates, license key from [uncsoft.lemonsqueezy.com](https://uncsoft.lemonsqueezy.com/)
-- **[The Architect's Toolkit Bundle](https://apps.apple.com/us/app-bundle/the-architects-toolkit/id1874965091?mt=12)** — cyberWriter + devPad + Anubis Pro
+- **[Mac App Store](https://apps.apple.com/us/app/cyberwriter/id6758079118?mt=12)** - automatic updates via the App Store
+- **[Direct Download](https://github.com/uncSoft/cyberwriter-app/releases/latest)** - same app, Sparkle auto-updates, license key from [uncsoft.lemonsqueezy.com](https://uncsoft.lemonsqueezy.com/)
+- **[The Architect's Toolkit Bundle](https://apps.apple.com/us/app-bundle/the-architects-toolkit/id1874965091?mt=12)** - cyberWriter + devPad + Anubis Pro
 
-**14-day free trial** — no account required. Both editions are the same app; they only differ in where they get updates.
+**7-day free trial** - no account required. Both editions are the same app; they only differ in where they get updates.
 
 > Requires macOS 15.0 (Sequoia) or later. Apple Silicon and Intel.
 
@@ -22,15 +22,15 @@
 
 cyberWriter's AI is built around your vault, not a generic chat box.
 
-- **Apple Intelligence** on macOS 26+ — zero-config, on-device, no API keys
-- **Chat with your vault** — ask questions across all your notes, get answers grounded in what you've written
-- **Vault structure awareness** — the model understands folder layout, wikilinks, and tags, not just raw text
-- **Document Map embeddings (RAG)** — every note is semantically indexed, so concept-level search works even when keywords don't match
-- **Search for concepts** — find "the meeting where we talked about pricing" without remembering the filename
+- **Apple Intelligence** on macOS 26+ - zero-config, on-device, no API keys
+- **Chat with your vault** - ask questions across all your notes, get answers grounded in what you've written
+- **Vault structure awareness** - the model understands folder layout, wikilinks, and tags, not just raw text
+- **Document Map embeddings (RAG)** - every note is semantically indexed, so concept-level search works even when keywords don't match
+- **Search for concepts** - find "the meeting where we talked about pricing" without remembering the filename
 - **Quick Actions** (`⌘J`): summarize, rewrite, explain, change tone, fix grammar, continue
-- **Provider auto-discovery** — Ollama, LM Studio, MLX, vLLM, Claude, OpenRouter, OpenAI-compatible
-- **Stream-to-editor** — watch the AI type live into your document
-- **File context** — attach `.md`, `.txt`, `.csv`, `.json`, `.pdf` to any prompt
+- **Provider auto-discovery** - Ollama, LM Studio, MLX, vLLM, Claude, OpenRouter, OpenAI-compatible
+- **Stream-to-editor** - watch the AI type live into your document
+- **File context** - attach `.md`, `.txt`, `.csv`, `.json`, `.pdf` to any prompt
 
 ![AI summarize](docs/screenshots/ai_sum.png)
 
@@ -45,7 +45,7 @@ cyberWriter's AI is built around your vault, not a generic chat box.
 - `#tags` rendered as styled pills, extracted from body and YAML frontmatter
 - 12+ callout block types (note, tip, warning, danger, info, success, …)
 - Quick switcher and drag-and-drop wikilink insertion
-- Reads any existing Obsidian vault — no migration required
+- Reads any existing Obsidian vault - no migration required
 
 ### Knowledge Graph
 
@@ -60,7 +60,7 @@ cyberWriter's AI is built around your vault, not a generic chat box.
 ![Mermaid + LaTeX](docs/screenshots/mermaid-latex.png)
 
 - **KaTeX** math, inline `$...$` and display `$$...$$`
-- **Mermaid** — 16 diagram types, dark mode theming, YAML config
+- **Mermaid** - 16 diagram types, dark mode theming, YAML config
 - Inline HTML/CSS, footnotes, YAML frontmatter
 - SVG diagrams in PDF, PNG in DOCX, interactive in HTML
 
@@ -108,7 +108,7 @@ Convert any document into a slideshow or a flashcard deck.
 
 ![Split view](docs/screenshots/hero-split-view.png)
 
-- Three view modes — Editor (`⌘1`), Split (`⌘2`), Preview (`⌘3`)
+- Three view modes - Editor (`⌘1`), Split (`⌘2`), Preview (`⌘3`)
 - 15+ syntax themes, system mode auto-switching
 - Outline sidebar (`⌘⇧O`), insert menu, line numbers, scroll sync
 - Focus Mode (`⌘⇧F`)
@@ -140,33 +140,33 @@ Quick find (`⌘F`) with inline highlighting, plus enhanced find (`⌘⌥F`) wit
 
 ## Export
 
-- **PDF** — publication-ready, with LaTeX, Mermaid, themed backgrounds, page-range export
-- **DOCX** — pure Swift OOXML, no external binaries
-- **HTML** — standalone, with embedded styles, media, and PDFs
-- **Markdown** — extended, with vault-style links and inline CSS
+- **PDF** - publication-ready, with LaTeX, Mermaid, themed backgrounds, page-range export
+- **DOCX** - pure Swift OOXML, no external binaries
+- **HTML** - standalone, with embedded styles, media, and PDFs
+- **Markdown** - extended, with vault-style links and inline CSS
 - **Plain text** and syntax-highlighted code scripts
 
 ---
 
 ## Example Vault
 
-The [`example-vault/`](./example-vault) folder is the vault that ships with cyberWriter on first launch — open it from inside the app to explore wikilinks, the graph, Mermaid, callouts, voice notes, and flash cards in context.
+The [`example-vault/`](./example-vault) folder is the vault that ships with cyberWriter on first launch - open it from inside the app to explore wikilinks, the graph, Mermaid, callouts, voice notes, and flash cards in context.
 
 ---
 
 ## In the wild
 
-cyberWriter ranks **#7 of 60** note-taking apps by feature powerscore on the [community macOS notes-app comparison sheet](https://docs.google.com/spreadsheets/d/1HtJN4oQ6oBDFmFaF4Qeq5vCGEU1g-KB1DEz5Sp_OwXo/edit?gid=469491148#gid=469491148) — and it's the highest-ranked app in the top tier that **doesn't rely on community plugins** for its core features.
+cyberWriter ranks **#7 of 60** note-taking apps by feature powerscore on the [community macOS notes-app comparison sheet](https://docs.google.com/spreadsheets/d/1HtJN4oQ6oBDFmFaF4Qeq5vCGEU1g-KB1DEz5Sp_OwXo/edit?gid=469491148#gid=469491148) - and it's the highest-ranked app in the top tier that **doesn't rely on community plugins** for its core features.
 
-**Why that matters:** every feature here — vault, graph, Mermaid, LaTeX, AI, RAG, embeddings, voice transcription — is built into the app, sandboxed, and reviewed for the Mac App Store. There are no unvetted third-party plugins running with full system access. The direct-sale build is the same binary as the App Store build; the only difference is how it gets updates and how the license is checked.
+**Why that matters:** every feature here - vault, graph, Mermaid, LaTeX, AI, RAG, embeddings, voice transcription - is built into the app, sandboxed, and reviewed for the Mac App Store. There are no unvetted third-party plugins running with full system access. The direct-sale build is the same binary as the App Store build; the only difference is how it gets updates and how the license is checked.
 
 ---
 
 ## License & Source
 
-cyberWriter is a commercial product. This repository hosts **public release binaries, the example vault, and documentation** — the source code is private.
+cyberWriter is a commercial product. This repository hosts **public release binaries, the example vault, and documentation** - the source code is private.
 
-- Trial: 14 days, no account required
+- Trial: 7 days, no account required
 - License: lifetime, no subscription
 - Updates: free, forever
 - Buy: [Mac App Store](https://apps.apple.com/us/app/cyberwriter/id6758079118?mt=12) or [direct](https://uncsoft.lemonsqueezy.com/)
