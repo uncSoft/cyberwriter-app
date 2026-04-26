@@ -37,8 +37,7 @@ cyberWriter's AI is built around your vault, not a generic chat box.
 ---
 
 ## File Vault (Obsidian-compatible)
-
-![Vault, tags, graph](docs/screenshots/vault-tags-graph.png)
+<img align="left" src="https://github.com/uncSoft/cyberwriter-app/blob/main/docs/screenshots/vault-tags-graph.png" width=350>
 
 - `[[wikilinks]]` with hover preview and full backlinks panel
 - `![[image.png]]` and `![[recording.m4a]]` embeds
@@ -46,6 +45,8 @@ cyberWriter's AI is built around your vault, not a generic chat box.
 - 12+ callout block types (note, tip, warning, danger, info, success, …)
 - Quick switcher and drag-and-drop wikilink insertion
 - Reads any existing Obsidian vault - no migration required
+<br clear="left" />
+
 
 ### Knowledge Graph
 
