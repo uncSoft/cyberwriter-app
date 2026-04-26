@@ -1,6 +1,6 @@
 # cyberWriter
 
-**Markdown that ships.** A native macOS editor for writers, researchers, and engineers - turns Markdown into publication-ready PDFs, Word docs, and HTML with zero external dependencies. Built in Swift and SwiftUI.
+**Markdown that ships.** A native macOS editor for writers, researchers, and engineers - turns Markdown into publication-ready PDFs, Word docs, and HTML with zero external dependencies. Built in Swift and SwiftUI. No insecure community plugins for core features, all built-in natively. Full Mermaid, KaTeX, Live HTML editing and AI support and integration.
 
 ![cyberWriter](docs/screenshots/hero1.png)
 
