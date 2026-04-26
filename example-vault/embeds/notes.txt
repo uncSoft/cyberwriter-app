@@ -1,0 +1,14 @@
+Meeting Notes — Perihelion Sync
+Date: 2026-03-15
+
+Attendees: Elena, Marcus, Sarah, James
+
+Key decisions:
+- Quantum error correction milestone moved to Q2
+- Hardware team needs 3 additional test rigs
+- Security audit scheduled for April
+
+Action items:
+1. Elena: Submit revised timeline by Friday
+2. Marcus: Provision test environment
+3. James: Begin penetration testing prep

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>cyberWriter</title>
+        <link>https://cyberwriter.app</link>
+        <description>cyberWriter Updates</description>
+        <language>en</language>
+        <item>
+            <title>Version 2.4</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.4</sparkle:version>
+            <sparkle:shortVersionString>2.4</sparkle:shortVersionString>
+            <pubDate>Mon, 14 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.4</h2>
+
+                    <h3>Apple Intelligence</h3>
+                    <ul>
+                        <li>On-device AI that works out of the box — no API keys, no setup</li>
+                        <li>Automatically available on supported hardware (macOS 26+)</li>
+                        <li>Falls back gracefully when no cloud model is configured</li>
+                    </ul>
+
+                    <h3>Presentation Mode</h3>
+                    <ul>
+                        <li>Play your document as slides or flashcards</li>
+                        <li>Splits by --- dividers or ## headings</li>
+                        <li>Auto-play, shuffle, three layout modes (Standard / Wide / Card)</li>
+                        <li>Keyboard controls: arrows, Space, R, W, F, Esc</li>
+                        <li>Auto-generated title slide from YAML frontmatter</li>
+                        <li>Mermaid diagrams and KaTeX math render on slides</li>
+                        <li>"Format with AI" sends your doc to the AI for restructuring</li>
+                    </ul>
+
+                    <h3>PDF Export</h3>
+                    <ul>
+                        <li>Page range export — single pages, ranges, or comma-separated lists</li>
+                        <li>Video placeholder cards in PDF (no more black rectangles)</li>
+                    </ul>
+
+                    <h3>Fixes</h3>
+                    <ul>
+                        <li>Sidebar state now correctly inherited by new windows/tabs</li>
+                        <li>Sparkle auto-checks for updates daily</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
+            <title>Version 2.3</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.3</sparkle:version>
+            <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
+            <pubDate>Sat, 12 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.3</h2>
+
+                    <h3>Voice Recording & Transcription</h3>
+                    <ul>
+                        <li>Record voice notes to your vault</li>
+                        <li>Record & transcribe with on-device speech recognition</li>
+                        <li>Live dictation — speak and text appears in real time</li>
+                    </ul>
+
+                    <h3>Media Embeds</h3>
+                    <ul>
+                        <li>Embed audio, video, PDF, CSV, RTF, and text files with ![[file]]</li>
+                        <li>YouTube links auto-embed as click-to-browser cards</li>
+                        <li>All media encodes into portable HTML exports</li>
+                    </ul>
+
+                    <h3>Editor</h3>
+                    <ul>
+                        <li>Quick formatting toolbar — Bold, Italic, Code, Link, Highlight</li>
+                        <li>Callout block dropdown (11 types)</li>
+                        <li>Superscript and subscript commands</li>
+                        <li>Custom templates — save any document as reusable template</li>
+                    </ul>
+
+                    <h3>Polish</h3>
+                    <ul>
+                        <li>Full HTML hover previews for wikilinks</li>
+                        <li>Improved scroll sync with mermaid-heavy documents</li>
+                        <li>Vault folder expansion state persists across sessions</li>
+                        <li>Unsaved file indicator in vault sidebar</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
+            <title>Version 2.2</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.2</sparkle:version>
+            <sparkle:shortVersionString>2.2</sparkle:shortVersionString>
+            <pubDate>Fri, 11 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.2</h2>
+                    <ul>
+                        <li>Resizable sidebar panel (260–500pt, per-window)</li>
+                        <li>Recent Files section in vault sidebar</li>
+                        <li>Save to Vault and Create Vault commands</li>
+                        <li>Sidebar state relay — new windows inherit panel layout</li>
+                        <li>Redesigned Files tab toolbar</li>
+                        <li>DMG distribution with Retina background</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
+            <title>Version 2.1</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.1</sparkle:version>
+            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <pubDate>Mon, 07 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.1</h2>
+                    <ul>
+                        <li>Command Palette (⌘/) — search and execute 80+ commands</li>
+                        <li>Template picker for new documents</li>
+                        <li>Full-text vault search with content snippets</li>
+                        <li>Improved mermaid chart theming</li>
+                        <li>AI system prompt improvements for better mermaid syntax</li>
+                        <li>Safari-compatible Open in Browser</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+    </channel>
+</rss>

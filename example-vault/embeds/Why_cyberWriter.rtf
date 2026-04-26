@@ -1,0 +1,142 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica-Oblique;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 HelveticaNeue-Italic;}
+{\colortbl;\red255\green255\blue255;\red154\green154\blue154;}
+{\*\expandedcolortbl;;\csgray\c66775;}
+\margl1440\margr1440\vieww16760\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\f0\b\fs72 \cf2 cyberWriter\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\f1\i\b0\fs24 \cf2 The Markdown Editor From the Future\
+\
+\pard\pardeftab720\li575\fi-576\ri-6595\sa383\qc\partightenfactor0
+
+\f2\i0\fs64 \cf2 \expnd0\expndtw0\kerning0
+Your Notes Deserve Better Than "Trust Me"{\field{\*\fldinst{HYPERLINK "https://www.linkedin.com/in/john-taverna/"}}{\fldrslt 
+\fs32 \
+}}\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 JT \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.linkedin.com/in/john-taverna/"}}{\fldrslt \cf2 \
+}}\pard\pardeftab720\li575\fi-576\ri576\sa383\partightenfactor0
+
+\fs28 \cf2 Chief Analytics Officer | Business Intelligence | AI | Data Engineer | Healthcare Data Strategy | Software Developer
+\fs33\fsmilli16800 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 April 10, 2026\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs40 \cf2 Why I built CyberWriter, a native, sandboxed Markdown editor with integrated local AI support - and why the security model of your writing tool actually matter
+\fs32 \
+I oversee the analytics infrastructure and PHI security policy for one of New York City's largest Federally Qualified Health Center networks - 90,000+ patients, clinical data flowing through every system I touch. My day is access controls for internal and external partners, audits and audit logs, HIPAA risk assessments, 42 CFR Part 2 substance use protections, and the constant low-grade dread of knowing that one misconfigured permission can expose someone's HIV status or psychiatric history. Self-hosting PHI is extremely powerful and extremely stressful.\
+When I sit down to write - strategic plans, clinical AI deployment analyses, epidemiological/population health assessments - I use a Markdown editor with a locally-hosted LLM. Not a cloud API. A model running on my own hardware, processing my text without it ever leaving my machine. I do this because I've spent two decades learning that the only security guarantee worth anything is a 
+\f3\i structural constraint
+\f2\i0 . Not a promise. Not a policy. A wall.\
+That mindset is what led me to build {\field{\*\fldinst{HYPERLINK "https://cyberwriter.app/"}}{\fldrslt CyberWriter}} Not because the world needed another Markdown editor, but because I couldn't find one whose security model I'd trust with the things I actually write - and I write about things that can hurt real people if they leak.\
+Here's the problem.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 The plugin problem nobody talks about\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 There's a category of popular note-taking and writing apps - you probably already know which ones I'm talking about - built on Electron with rich community plugin ecosystems. They're beautifully designed. They have passionate communities. And their security model is, to put it politely, built on hope.\
+Here's how the typical architecture works: the app itself is a relatively thin shell. The real functionality - templates, advanced queries, dataview tables, sync features, collaboration - comes from community-developed plugins. These plugins run as JavaScript in a Node.js context. And in most cases, they have unrestricted access to your filesystem. Not just the folder where your notes live. Your 
+\f3\i entire filesystem
+\f2\i0 .\
+That means a plugin you installed to get a nice calendar view in your sidebar has the same file access as any other process on your machine. Your SSH keys. Your browser cookies. Your tax returns. Your clinical notes. Everything.\
+This isn't a theoretical concern. It's how the architecture actually works, and the developers of these apps have publicly acknowledged it. The typical response is some version of: "sandboxing plugins in JavaScript is effectively impossible because there are too many escape hatches - eval, new Function(), child_process, etc."\
+That's a fair technical observation. But it's also an indictment of the architectural choice, not a defense of it. If you chose a platform where sandboxing is impossible, and your product handles sensitive personal data, you chose the wrong platform.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 "Restricted mode" isn't a real answer\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 Some of these apps ship with plugins disabled by default and display a warning before you enable them. That's better than nothing, but it's also a fig leaf. The apps are 
+\f3\i designed
+\f2\i0  to be extended. Their documentation features plugins prominently. Their communities organize around plugin recommendations. Core workflows that users expect - things like advanced templating, structured data queries, or real-time collaboration - simply don't exist without plugins.\
+Telling users "you can just not use plugins" is like selling a smartphone with no apps and saying "the phone dialer is very secure." Technically true. Practically meaningless.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 The workarounds are worse than the problem\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 The security-conscious users in these communities have developed workarounds: run the app in a Docker container. Use firejail on Linux. Set up a dedicated VM. Configure Little Snitch to block all network traffic from the app.\
+These are real mitigations. They're also absurd. We're talking about a 
+\f3\i note-taking app
+\f2\i0 . If using your writing tool safely requires the same operational security as running a honeypot, something has gone wrong at the architectural level.\
+And even the containerized approaches have gaps. One popular Linux packaging format ships with full /home access by default. Users who think they're sandboxed often aren't.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 What "secure by default" actually looks like\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 When I started building CyberWriter, I made a deliberate architectural decision: native macOS, Swift/SwiftUI, distributed through the Mac App Store, with full Mermaid and LaTeX suport.\
+This isn't just a technology preference. It's a security 
+\f3\i constraint
+\f2\i0 . Here's what it means in practice:\
+App Sandbox enforcement. Every Mac App Store app runs inside Apple's App Sandbox. CyberWriter literally 
+\f3\i cannot
+\f2\i0  access files outside its sandbox container unless you explicitly grant access through a system file dialog. This isn't a setting I chose to enable - it's enforced by the operating system. A native sandboxed app can't read your SSH keys, can't access your browser data, can't enumerate your home directory. The constraint is structural, not behavioral.\
+Code signing and notarization. The binary is signed with my Apple Developer certificate and notarized by Apple before distribution. You can verify exactly who built it and that it hasn't been tampered with. There's a real identity - mine - attached to every build.\
+No plugin architecture. CyberWriter is batteries-included. There's no plugin ecosystem, which means there's no supply chain attack surface. The features you see are the features that exist, and they're all subject to the same sandbox constraints as the rest of the app. Nobody's community calendar widget is going to exfiltrate your journal.\
+No Electron. This isn't about being a platform purist. Electron apps run a full Chromium instance and a Node.js runtime. That's an enormous attack surface for a text editor. Native macOS apps have a fraction of the codebase, a fraction of the dependencies, and a fraction of the vulnerability surface.\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs28 \cf2 Custom Colors for Mermaid Diagrams\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs28 \cf2 Full LaTeX support\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 A note on open source\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 I want to be clear: I'm not anti-open-source. I 
+\f3\i am
+\f2\i0  open source. My most widely used apps - {\field{\*\fldinst{HYPERLINK "https://github.com/uncsoft/anubis-oss"}}{\fldrslt Anubis OSS}}, an LLM benchmarking tool for Apple Silicon - is fully open-source, and I contribute to other projects. Open source has given me most of the tools I've built my career on. It has 120 stars on Github.\
+But open source is a development model, not a security model. The ability to inspect code is valuable. It is not, by itself, a guarantee that anyone 
+\f3\i has
+\f2\i0  inspected it, especially in plugin ecosystems accepting contributions from the general public, where a new update can ship at any time and the previous audit (if there was one) is immediately stale. The open-source projects I trust most are the ones that pair source availability with real architectural constraints on what code can do. Visibility without containment is just transparency about your exposure.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 Who should care about this\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 If you're writing grocery lists and D&D session notes, honestly, use whatever you want. The threat model doesn't justify the tradeoff.\
+But if you're a clinician writing patient observations, Ior drafting a substance use treatment plan that's protected under 42 CFR Part 2 - where 
+\f3\i any
+\f2\i0  unauthorized disclosure is a federal violation. If you're a lawyer building a case file. If you're a journalist protecting a source. If you're an executive writing strategy documents that would move a stock price. If your writing contains information that could harm real people if it leaks - you should understand the difference between an app that 
+\f3\i promises
+\f2\i0  not to read your files and an app that 
+\f3\i can't
+\f2\i0 .\
+I wouldn't connect an unvetted third-party system to my clinical data infrastructure. Why would I trust one with my own writing about that same data?\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs40 \cf2 What CyberWriter actually is\
+\pard\pardeftab720\sa640\partightenfactor0
+
+\fs32 \cf2 CyberWriter is an AI-integrated scientific and technical writing tool for macOS. It works with standard Markdown files organized in vault-style folders - your notes stay as plain .md files on your filesystem, no proprietary format, no lock-in. Just drop your .md vault in and keep working\
+The AI integration supports both API-based models and locally-hosted LLMs - and this is how I actually use it. My strategic plans, clinical deployment analyses, and internal assessments are written in CyberWriter with a local model running on Apple Silicon. The text I write never leaves my machine. There's no cloud round-trip, no third-party processing, no ambiguity about where my data goes. For someone who spends all day thinking about data governance, that matters.\
+This is the tool I trust with my own work. I wouldn't ship something I wouldn't use for the things that actually matter to me.\
+It's available on the {\field{\*\fldinst{HYPERLINK "https://apps.apple.com/us/app/cyberwriter/id6758079118?mt=12"}}{\fldrslt Apple App Store}} and directly through {\field{\*\fldinst{HYPERLINK "https://cyberwriter.app/"}}{\fldrslt LemonSqueezy}} and it costs less than a month of most cloud-based writing tools.\
+I built it because I needed it. I ship it because other people need it too.\
+~John
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs72 \cf2 \kerning1\expnd0\expndtw0 \
+}
