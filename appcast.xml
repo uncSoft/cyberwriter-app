@@ -32,7 +32,7 @@
                         <li>Discrete presets: Theme default, 1.0, 1.15, 1.25, 1.5, 1.75, 2.0, 2.5 — matches Word/Pages, no slider ambiguity</li>
                         <li>Per-document override via YAML frontmatter — drops in front of the global setting:</li>
                     </ul>
-                    <pre style="background:#f5f5f5;padding:8px 12px;border-radius:4px;font-size:12px;">---
+                    <pre style="background:#575454;padding:8px 12px;border-radius:4px;font-size:12px;">---
 title: My Doc
 line-height: 1.7
 ---</pre>
