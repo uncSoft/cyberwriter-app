@@ -3,9 +3,9 @@ title: cyberWriter Guide.md
 author: JT
 date: 2026-04-14
 tags: mermaid, latex, katex, docs, samples, guide
-related files: [[Dr. Elena Vasquez]],[[Entangled Labs]],[[Habitat Design]]
 revision: 2.4
 ---
+
 # cyberWriter User Guide
 
 **cyberWriter** is a native macOS Markdown editor that transforms your documents into beautifully formatted PDFs and Word documents with zero external dependencies. No Pandoc, no LaTeX, no command-line tools required. 
