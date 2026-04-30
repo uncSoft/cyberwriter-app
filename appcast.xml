@@ -6,6 +6,45 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.95</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.95</sparkle:version>
+            <sparkle:shortVersionString>2.95</sparkle:shortVersionString>
+            <pubDate>Thu, 30 Apr 2026 00:36:34 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/2.95/cyberWriter-Direct.zip" length="21585182" type="application/octet-stream" sparkle:edSignature="JWnDZSSX44e4cTDe6o3oVIaFA4tDlJWDVpB8sSkuHgWZIlDkZD6T7iCxsL0aSOIPDPvm/+veq+/Jl0oZJ1KDCg=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.95</h2>
+
+                    <h3>Multi-language input support</h3>
+                    <ul>
+                        <li>Fixed dropped accents and stray newlines when typing fast on Spanish (and other dead-key) layouts — the editor now defers internal updates while the IME has marked text, so compositions resolve cleanly</li>
+                        <li>Fixed Japanese / Chinese / Korean text getting inserted on the wrong line when typing fast and converting with Space — the marked range can no longer be invalidated mid-composition</li>
+                        <li>Same hardening applies to every IME-using language: dead keys and character conversion now land where you expect, regardless of typing speed</li>
+                    </ul>
+
+                    <h3>Vault embeddings</h3>
+                    <ul>
+                        <li>Fixed "Indexing 0 of 1 files" flashing loop on configurations where one vault file produced no embeddable chunks (frontmatter-only notes, all-code-fence notes, unreadable encodings)</li>
+                        <li>Two-phase build (read+chunk, then embed) means progress now reflects chunk-level work — a 4000-chunk log file shows real movement instead of a silent beachball</li>
+                        <li>New indexing pill in the vault Files-tab toolbar surfaces progress when a vault is opened from the sidebar (the top-of-window banner is easy to miss with sidebar focus)</li>
+                    </ul>
+
+                    <h3>AI panel focus</h3>
+                    <ul>
+                        <li>⌘/ command palette now reliably claims keyboard focus from the AI chat input — typing lands in the search field, not the chat</li>
+                        <li>New documents (⌘N, ⌘T, ⌘O) start with the cursor in the editor instead of the AI chat input</li>
+                    </ul>
+
+                    <h3>Polish</h3>
+                    <ul>
+                        <li>About: thanks to /u/Stubborninmate for excellent testing and feedback</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 2.9</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>2.9</sparkle:version>
