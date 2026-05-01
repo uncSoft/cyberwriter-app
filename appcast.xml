@@ -31,6 +31,14 @@
                         <li>Restored File menu items that disappeared on macOS 26 — Quick Export PDF, Export, Save to Vault, and Restore Example Vault. Apple's expanded auto-injected document-menu group was eating the slot SwiftUI's older anchor used; commands now live on stable anchors and the new top-level Vault menu</li>
                         <li>Fixed runaway CPU triggered by opening the About window. Animated subviews were burning ~190% CPU and continued running even after dismissal because the timeline kept ticking and per-frame allocations grew without bound. CPU now plateaus below 30% while open and drops to baseline immediately on close</li>
                     </ul>
+
+                    <h3>Also recent (since 2.9)</h3>
+                    <ul>
+                        <li>Multi-language input fixes — dropped accents on Spanish (and other dead-key) layouts no longer drop, and Japanese / Chinese / Korean conversions during fast typing land at the right cursor position instead of the wrong line</li>
+                        <li>Vault embeddings: eliminated the "Indexing 0 of 1 files" flashing loop that affected some Mac configurations, especially with frontmatter-only or all-code-fence notes</li>
+                        <li>Vault embedding progress now shows chunk-level detail with a sidebar indicator — large log files no longer beachball during indexing</li>
+                        <li>AI chat input no longer steals keyboard focus from the ⌘/ command palette or freshly opened documents</li>
+                    </ul>
                 ]]>
             </description>
         </item>
