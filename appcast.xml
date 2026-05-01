@@ -6,6 +6,35 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.96</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.96</sparkle:version>
+            <sparkle:shortVersionString>2.96</sparkle:shortVersionString>
+            <pubDate>Fri, 01 May 2026 01:29:15 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/2.96/cyberWriter-Direct.zip" length="21630386" type="application/octet-stream" sparkle:edSignature="cmSJw5FcVsHavd5n2i5L91F8ce+mZ3CN+F6Y7YqRcQ9FR3BYcokq2cBiAGDrAlL5Z9W3r+QnnuVi5NwNupYdCA=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.96</h2>
+
+                    <h3>Vault Stats Dashboard</h3>
+                    <ul>
+                        <li>One-click vault overview from the Files-tab toolbar (📊 chart icon) — writes Vault Stats.md at the vault root and opens it instantly</li>
+                        <li>Sections: file & word counts, top tags, most-linked files, orphans (files with no inbound wikilinks), recently modified, folder + file-type breakdowns</li>
+                        <li>Every file reference renders as a [[wikilink]], so the dashboard doubles as a navigable Map of Content</li>
+                        <li>Click the icon again to regenerate with a fresh timestamp; the existing dashboard closes and reopens with current data</li>
+                        <li>Also accessible from the new top-level Vault menu in the menu bar, alongside Save to Vault and Restore Example Vault</li>
+                    </ul>
+
+                    <h3>Fixes</h3>
+                    <ul>
+                        <li>Restored File menu items that disappeared on macOS 26 — Quick Export PDF, Export, Save to Vault, and Restore Example Vault. Apple's expanded auto-injected document-menu group was eating the slot SwiftUI's older anchor used; commands now live on stable anchors and the new top-level Vault menu</li>
+                        <li>Fixed runaway CPU triggered by opening the About window. Animated subviews were burning ~190% CPU and continued running even after dismissal because the timeline kept ticking and per-frame allocations grew without bound. CPU now plateaus below 30% while open and drops to baseline immediately on close</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 2.95</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>2.95</sparkle:version>
