@@ -6,6 +6,50 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.97</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>2.97</sparkle:version>
+            <sparkle:shortVersionString>2.97</sparkle:shortVersionString>
+            <pubDate>Sun, 03 May 2026 01:52:01 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/2.97/cyberWriter-Direct.zip" length="21699656" type="application/octet-stream" sparkle:edSignature="vJjoQ64RnJ5aOHmMDyJBIqKjvaCln4974Oo6Rna41l7JZAsPMyPphRRw/kta0TaUDPxJxdQgZGon/ywoqQ/NDA=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 2.97</h2>
+
+                    <h3>App Appearance</h3>
+                    <ul>
+                        <li>New three-way picker in Settings → Themes: <strong>Cyber</strong> (the original Synthetic Editorial dark identity), <strong>System Light</strong>, or <strong>System Dark</strong></li>
+                        <li>Cyber preserves the exact original look pixel-for-pixel — nothing changes if you've been here all along</li>
+                        <li>System Light and System Dark hand window chrome to macOS so cyberWriter blends with the rest of your apps; the editor and preview keep their own document themes independent of this setting</li>
+                        <li>Light mode polish throughout — pale-blue toolbar tint, dark brand-text variants for legibility on white, mode-aware sidebar accents, light-friendly knowledge-graph background</li>
+                    </ul>
+
+                    <h3>License management</h3>
+                    <ul>
+                        <li>New Settings → License tab: status badge, masked key, and one-click <strong>Change License Key</strong> / <strong>Deactivate</strong> actions</li>
+                        <li>Deactivate now releases this Mac's activation slot on the Lemon Squeezy server, so you can move your license to another machine without contacting support</li>
+                        <li>License key field auto-trims whitespace on paste — messy email pastes with stray spaces or newlines just work</li>
+                    </ul>
+
+                    <h3>Editor &amp; AI</h3>
+                    <ul>
+                        <li>AI chat now renders Markdown HTML reliably — no more occasional raw-tag passthrough</li>
+                        <li>Vault search results jump to the matching line on click instead of just opening the file</li>
+                        <li>Tag pills colored by hash by default — categories scan faster across many notes (toggle in Settings if you prefer neutral chips)</li>
+                        <li>Line numbers off by default for a cleaner first-launch experience (toggle in Settings)</li>
+                    </ul>
+
+                    <h3>Also recent (since 2.96)</h3>
+                    <ul>
+                        <li>Vault Stats Dashboard — one-click vault overview from the Files-tab toolbar; counts, top tags, most-linked files, orphans, recent modifications, all rendered as navigable wikilinks</li>
+                        <li>Restored File menu items that disappeared on macOS 26 — Quick Export PDF, Export, Save to Vault, Restore Example Vault</li>
+                        <li>Stopped runaway CPU when the About window was open or recently closed</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 2.96</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>2.96</sparkle:version>
