@@ -6,6 +6,31 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.0</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.0</sparkle:version>
+            <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
+            <pubDate>Sat, 23 May 2026 01:36:46 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.0/cyberWriter-Direct.zip" length="23673151" type="application/octet-stream" sparkle:edSignature="lod1/FTYnyiPvJeNnbfKRI2H/y5ZF5w+xHZeaOS0cGySs3l4xoohoy+f8fqpfAtQKRwGB8hKtek2v0uDLodHDw=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 3.0</h2>
+
+                    <h3>WYSIWYG editor (beta)</h3>
+                    <ul>
+                        <li>A new visual editing surface where formatting renders inline instead of as markdown syntax — write the way the doc reads</li>
+                        <li>Hit <strong>⌘4</strong> to enter it (no toolbar button — this is an early beta, opt-in only)</li>
+                        <li>All of cyberWriter's custom syntax round-trips through it: wikilinks, vault embeds (10 file types), Mermaid diagrams, KaTeX math, callouts, page breaks, hex color swatches, tags</li>
+                        <li>Same AI Quick Actions (⌘J), voice transcription, and slash-command palette work in the visual surface</li>
+                        <li>Themes apply live — Cyber, System Light, System Dark, and the document theme picker all drive WYSIWYG typography and color</li>
+                        <li>⌘F find with next/prev (⌘G / ⌘⇧G), pinch-to-zoom, body font size +/-, PDF preview round-trip</li>
+                        <li>Marked clearly with an orange <em>BETA</em> pill while it's still being polished — Crepe's hide-markdown-once-formatted behavior and a few HTML embed quirks are known and on the punch list</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 2.97</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>2.97</sparkle:version>
