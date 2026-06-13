@@ -6,6 +6,55 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.5</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.5</sparkle:version>
+            <sparkle:shortVersionString>3.5</sparkle:shortVersionString>
+            <pubDate>Fri, 12 Jun 2026 22:39:35 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.5/cyberWriter-Direct.zip" length="24895801" type="application/octet-stream" sparkle:edSignature="SlNIN7HSjv+P8pzLnqvSqcXlZZuOqXkRslzrzSOHCz8Nci3lf5uItjHuR2gzWw6gl+CoYzpC5vAnRwIFrrd2Dg=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 3.5</h2>
+
+                    <h3>A real light mode — and Blackout</h3>
+                    <ul>
+                        <li>A full appearance system: <strong>System Light</strong>, <strong>System Dark</strong>, the original <strong>Cyber</strong>, and a new pure-black <strong>Blackout</strong></li>
+                        <li>Every accent, border, panel, and the knowledge graph retuned to read crisply in each mode</li>
+                    </ul>
+
+                    <h3>Knowledge Graph, reimagined</h3>
+                    <ul>
+                        <li>Your vault as a living globe — tag clustering, tag-colored nodes, and selectable layouts</li>
+                        <li>Search lights up matching notes, a guided tour mode walks the graph, and Vault Stats are a click away</li>
+                    </ul>
+
+                    <h3>Snippets</h3>
+                    <ul>
+                        <li>A built-in snippet manager — capture from any document, organize in folders, pin favorites</li>
+                        <li>Drop snippets anywhere with the shade (<strong>⌘⌥S</strong>)</li>
+                    </ul>
+
+                    <h3>Voice, upgraded</h3>
+                    <ul>
+                        <li>Pick your input device, watch a live waveform, and see words stream into the editor as you speak</li>
+                        <li>Dictation and AI insertions anchor cleanly without disturbing your cursor</li>
+                    </ul>
+
+                    <h3>Faster everywhere</h3>
+                    <ul>
+                        <li>Large documents open and render dramatically faster, theme switching is instant, and tab switching is smoother</li>
+                        <li>The knowledge graph pauses when the app is in the background, so cyberWriter sips power instead of gulping it</li>
+                    </ul>
+
+                    <h3>Plus</h3>
+                    <ul>
+                        <li>Native undo with correct caret behavior, smoother sidebar animations, a polished first-launch flow, and dozens of fixes from our bug-hunting users</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.0</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.0</sparkle:version>
