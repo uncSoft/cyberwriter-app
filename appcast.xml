@@ -6,6 +6,35 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.7</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.7</sparkle:version>
+            <sparkle:shortVersionString>3.7</sparkle:shortVersionString>
+            <pubDate>Mon, 15 Jun 2026 13:15:29 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.7/cyberWriter-Direct.zip" length="24910556" type="application/octet-stream" sparkle:edSignature="erps8bjx2YaGHo6HopWWPsVG3Hg1J+bK2pLcCUxW1WHpM75p3xHcnbCQTGVotGh8nAJwGQrxFZsuiyP6iQsiCw=="/>
+            <description>
+                <![CDATA[
+                    <h2>cyberWriter 3.7</h2>
+
+                    <h3>Welcome screen fixes</h3>
+                    <ul>
+                        <li>Fixed the preview occasionally getting stuck on a &ldquo;Loading Preview&hellip;&rdquo; placeholder for an empty document &mdash; the welcome screen (recent files &amp; quick start) now appears right away, no reload needed</li>
+                        <li>The welcome screen now follows your <strong>App Appearance</strong>: pure black in <strong>Blackout</strong>, true light in <strong>System Light</strong>, and dark in <strong>System Dark</strong> &mdash; it no longer borrows the editor&rsquo;s document theme</li>
+                    </ul>
+
+                    <h3>Also recent (since 3.6)</h3>
+                    <ul>
+                        <li>A full appearance system &mdash; System Light, System Dark, and pure-black Blackout alongside the original Cyber identity</li>
+                        <li>Knowledge Graph reimagined &mdash; tag-colored nodes, a guided tour, and search that lights up matching notes</li>
+                        <li>Snippets manager &mdash; capture, organize, pin, and embed reusable text (&#8984;&#8997;S shade)</li>
+                        <li>Voice upgraded &mdash; input-device picker, live waveform, and words streaming in as you speak</li>
+                        <li>Faster large-document rendering, instant theme switching, and smoother tab switching</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.6</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.6</sparkle:version>
