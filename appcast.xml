@@ -6,6 +6,91 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.8</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.8</sparkle:version>
+            <sparkle:shortVersionString>3.8</sparkle:shortVersionString>
+            <pubDate>Mon, 06 Jul 2026 21:37:03 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.8/cyberWriter-Direct.zip" length="46186405" type="application/octet-stream" sparkle:edSignature="5+8Eba594ee5DdOXN5cbnvWAkGA/IR23EnYgCytAvG7brYVl3lhDg4XTa3oWvH8XC8MwGRlXV5BlP3+xi6HBBQ=="/>
+            <description>
+                <![CDATA[
+<h2>cyberWriter 3.8</h2>
+
+<h3>WYSIWYG editing, for real</h3>
+<ul>
+    <li>The rich-text view (&#8984;4) graduates from beta to a <strong>full editing surface</strong> &mdash; write in formatted text with live tables, charts, math, and diagrams</li>
+    <li>AI streaming, dictation, find &amp; replace, the &#8984;/ insert menu, Properties, and live data blocks all work natively inside it</li>
+    <li>Flip between source and WYSIWYG anytime &mdash; your Markdown stays clean, byte for byte</li>
+</ul>
+
+<h3>Live Data blocks</h3>
+<ul>
+    <li>Drop an <code>api</code> block into any note, click <strong>Run</strong>, and the response renders as a formatted table &mdash; baked into the document so it exports everywhere</li>
+    <li><code>query</code> blocks filter your vault&rsquo;s frontmatter into live Dataview-style tables</li>
+    <li>API keys live in the macOS Keychain as <code>{{secret}}</code> references &mdash; never in your files &mdash; and every run lands in a browsable API History</li>
+</ul>
+
+<h3>Vega &amp; Vega-Lite charts</h3>
+<ul>
+    <li>Publication-grade charts from a fenced block &mdash; live in the preview, themed to your appearance, exported to PDF, Word, and HTML</li>
+    <li>Twelve quick-inserts plus a gallery document; bind chart data to <code>.json</code> / <code>.csv</code> files in your vault and the chart follows the file</li>
+</ul>
+
+<h3>Excalidraw drawings</h3>
+<ul>
+    <li>A full whiteboard canvas &mdash; offline and private. <code>.excalidraw</code> files are first-class documents</li>
+    <li>Embed drawings in notes with <code>![[drawing.excalidraw]]</code> &mdash; they render in preview and every export</li>
+    <li>The new <strong>Vault Map</strong> draws your entire vault&rsquo;s link graph as a clickable Excalidraw atlas</li>
+</ul>
+
+<h3>Properties &amp; query blocks</h3>
+<ul>
+    <li>Frontmatter grew up: a typed <strong>Properties panel</strong> edits tags, dates, and fields inline &mdash; no YAML wrangling</li>
+    <li>Obsidian-style comma-separated tags are recognized, and edits write back clean list syntax</li>
+</ul>
+
+<h3>Build a wiki from plain notes</h3>
+<ul>
+    <li><strong>Unlinked Mentions</strong> finds every place a note&rsquo;s title appears without a link and connects it in one click, right from the sidebar</li>
+    <li>The new <strong>Vault Health Report</strong> rounds up broken links, orphan notes, and duplicate titles</li>
+</ul>
+
+<h3>Tables, paste &amp; folding</h3>
+<ul>
+    <li>Paste from Excel, Numbers, the web, Word, or Mail and it lands as clean Markdown &mdash; tables included</li>
+    <li>Tab through table cells, add and delete rows or columns, convert text to tables, format on the fly</li>
+    <li>A floating selection toolbar puts formatting at your cursor; any block folds away with &#8984;. when you need the room</li>
+</ul>
+
+<h3>Faster with huge vaults</h3>
+<ul>
+    <li>Multi-thousand-file vaults scroll, search, and index smoothly &mdash; AI indexing moved fully off the main thread with a subtle status-bar indicator instead of popups</li>
+    <li>Saves rescan only what changed; drag-and-drop stays responsive during background work</li>
+</ul>
+
+<h3>More</h3>
+<ul>
+    <li>The interactive <strong>Feature Guide</strong> is now Help (&#8984;?) &mdash; searchable cards for every feature</li>
+    <li>KaTeX color sugar: <code>$...$:color</code> tints any equation, plus a Math insert menu</li>
+    <li>Native macOS <strong>Version History</strong> from the toolbar and vault menu</li>
+    <li>New <strong>Apropos</strong> theme with bundled Nunito Sans &amp; Noto Sans; theme fonts now flow into WYSIWYG</li>
+    <li>Theme-aware Mermaid diagrams with per-chart <code>[bg:COLOR]</code> cards</li>
+    <li>Vault: Show All Files toggle, Open As (Plain Text / Hex), folder context menus, Restore Example Vault</li>
+    <li>Smarter first-launch flow, wikilink hover cards that render KaTeX and Mermaid, dozens of editor-hardening fixes</li>
+</ul>
+
+<h3>Also recent (since 3.6)</h3>
+<ul>
+    <li>A full appearance system &mdash; System Light, System Dark, and pure-black Blackout alongside the original Cyber identity</li>
+    <li>Knowledge Graph reimagined &mdash; tag-colored nodes, a guided tour, and search that lights up matching notes</li>
+    <li>Snippets manager &mdash; capture, organize, pin, and embed reusable text (&#8984;&#8997;S shade)</li>
+    <li>Voice upgraded &mdash; input-device picker, live waveform, and words streaming in as you speak</li>
+</ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.7</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.7</sparkle:version>
