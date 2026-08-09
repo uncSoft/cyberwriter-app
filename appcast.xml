@@ -6,6 +6,59 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.9</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.9</sparkle:version>
+            <sparkle:shortVersionString>3.9</sparkle:shortVersionString>
+            <pubDate>Sun, 09 Aug 2026 16:22:07 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.9/cyberWriter-Direct.zip" length="44544288" type="application/octet-stream" sparkle:edSignature="G4u7NR/T5rUEmu2g5wi/RCORrgqojOe7hjv9/KBeBWg7jLgOYIqjr2c6x+i6ZEfB7F/r65MF3pTmtohQ2Ni6BQ=="/>
+            <description>
+                <![CDATA[
+<h2>cyberWriter 3.9</h2>
+
+<h3>GLOW &mdash; a terminal for your vault</h3>
+<ul>
+    <li>A built-in command line in a phosphor drawer over your vault. Familiar commands &mdash; <code>ls</code>, <code>cd</code>, <code>cat</code>, <code>grep</code>, <code>find</code>, <code>tree</code>, <code>wc</code> &mdash; plus vault-native ones: <code>links</code>, <code>backlinks</code>, <code>tags</code>, <code>recent</code>, <code>stats</code>, and <code>this</code> (the note you&rsquo;re in)</li>
+    <li><strong>Your AI model on the prompt line.</strong> Pipe any command into it (<code>grep TODO | ai "summarize these"</code>), send the answer straight into a note (<code>&hellip; &gt; this</code>), and let it read, search, and <strong>edit files</strong> &mdash; with <code>run</code> for its built-in scripts and <code>undo</code> to take any change back</li>
+    <li>Dock it, pull it down as a shade, or pop it out into its own window</li>
+</ul>
+
+<h3>PLATO &mdash; a new face</h3>
+<ul>
+    <li>A new <strong>PLATO</strong> appearance joins the roster (alongside Cyber, Blackout, and System Light/Dark) &mdash; a warm phosphor finish across the whole app</li>
+    <li>A refreshed rose app icon and launch splash</li>
+    <li>The knowledge graph takes on the rose shape</li>
+</ul>
+
+<h3>Editing &amp; AI</h3>
+<ul>
+    <li>LaTeX written with <code>\(&hellip;\)</code> and <code>\[&hellip;\]</code> now typesets in the editor &mdash; math pasted from an AI reply or the web just renders</li>
+    <li>AI replies that arrive wrapped in a stray <code>```markdown</code> fence now format correctly instead of showing as raw code</li>
+    <li>The <code>&#8984;/</code> insert menu fans Mermaid and Vega out to every chart type through fly-out submenus</li>
+    <li>The typed Properties chip strip comes to the Mac editor</li>
+</ul>
+
+<h3>Fixes &amp; polish</h3>
+<ul>
+    <li>PDF export hardened against an off-main-thread WebKit measurement</li>
+    <li>Vault Analyze tools are cancellable with live progress, and sync-conflict false alarms are fixed</li>
+    <li>The serializer no longer escapes a literal <code>$</code> to <code>\$</code></li>
+    <li>Complete open-font licenses and in-app acknowledgements</li>
+    <li>WYSIWYG scroll-lock, scroll-inheritance, and ghost-dirty-document fixes</li>
+</ul>
+
+<h3>Also in 3.8, if you&rsquo;re catching up</h3>
+<ul>
+    <li>The rich-text view (&#8984;4) graduated to a full WYSIWYG editing surface</li>
+    <li>Live Data <code>api</code> blocks and Dataview-style <code>query</code> blocks, with API keys in the Keychain</li>
+    <li>Vega &amp; Vega-Lite charts, Excalidraw drawings, and a Vault Map atlas</li>
+    <li>A typed Properties panel, Unlinked Mentions, and a Vault Health Report</li>
+</ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.8</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.8</sparkle:version>
