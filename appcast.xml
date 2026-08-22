@@ -6,6 +6,63 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.95</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.95</sparkle:version>
+            <sparkle:shortVersionString>3.95</sparkle:shortVersionString>
+            <pubDate>Sat, 22 Aug 2026 02:50:34 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.95/cyberWriter-Direct.zip" length="44911581" type="application/octet-stream" sparkle:edSignature="9tcV5YhCFiShr7BUvkCzzbsK+w4hpTIan9vowT5DOmKCMioJiUnLJVX1u7dZ+onMl7+5oybvd/x3pXrn/f71DQ=="/>
+            <description>
+                <![CDATA[
+<h2>cyberWriter 3.95</h2>
+
+<h3>Type <code>[[</code> and pick a note</h3>
+<ul>
+    <li>Start a wikilink and cyberWriter offers the notes to finish it - in the Markdown editor and in WYSIWYG alike. Recent notes first, then filtering as you type.</li>
+    <li>Matches <strong>titles</strong>, then frontmatter <strong>aliases</strong>, then folder paths. Pick a note found by its alias and you get <code>[[Note|Alias]]</code>, so the link resolves while reading the way you searched for it.</li>
+    <li><code>[[#tag</code> lists every note carrying that tag - partial tags work, and a second word narrows inside it (<code>#project spec</code>).</li>
+    <li>Each row tells you <em>why</em> it matched. Arrow keys to move, Return or Tab to insert, Escape to keep the brackets you typed. One Undo takes the whole link back.</li>
+</ul>
+
+<h3>Image captions and figures</h3>
+<ul>
+    <li>An image on its own line becomes a <strong>figure</strong>, with its alt text as the caption: <code>![Cross-section of the hull](hull.png)</code>. Vault embeds caption with a pipe: <code>![[hull.png|Cross-section]]</code>.</li>
+    <li>Optional <strong>figure numbering</strong> (Settings or the PDF export options) prefixes captions with "Figure 1." in document order, renumbering as you reorder. Pin one by writing it - <code>![Figure 7. Hull](hull.png)</code> stays 7 and the sequence continues from 8.</li>
+    <li>Embeds can be <strong>sized</strong>: <code>![[shot.png|300]]</code> or <code>|300x200</code>.</li>
+    <li>Figures never split across a page in PDF export.</li>
+</ul>
+
+<h3>Bring your own CSS</h3>
+<ul>
+    <li>A <strong>custom stylesheet</strong> applied to every note's preview and to PDF and HTML export - heading colours per level, line length, margins, paragraph spacing, whatever you want to write.</li>
+    <li>It's a real file you can edit in any editor, keep in version control, or sync between Macs. Edits appear on the next render.</li>
+    <li>Loads after the theme, so your rules win. A starter template shows which selectors to reach for.</li>
+</ul>
+
+<h3>GLOW terminal</h3>
+<ul>
+    <li><strong><code>demo</code></strong> - a guided tour that runs real commands against your vault, at your pace.</li>
+    <li><strong><code>dump</code></strong> - save the session's transcript to a note.</li>
+    <li>A live greeting on every open: your vault, its counts, your model, the note you're in.</li>
+    <li>The AI on the prompt line now remembers the conversation, takes dragged-in files as context, and works with Apple Intelligence.</li>
+</ul>
+
+<h3>Faster, and more finished</h3>
+<ul>
+    <li><strong>Tooltips everywhere.</strong> Every button in every panel explains itself on hover - reliably, which the old ones did not.</li>
+    <li><strong>Faster saves on large vaults.</strong> Saving no longer does work proportional to the whole vault.</li>
+    <li><strong>Faster sidebar.</strong> Opening the file browser with the graph expanded no longer waits for the graph to draw.</li>
+    <li>The AI Workspace opens with somewhere to start instead of a wall of instructions, and offers to index your vault once rather than assuming.</li>
+    <li>Markdown images written as <code>![](shot.png)</code> now resolve anywhere in your vault, the same way <code>![[shot.png]]</code> always has.</li>
+    <li>Clearer license activation errors when a server reply can't be read.</li>
+</ul>
+
+<p style="opacity:0.75"><strong>Also recent (3.9):</strong> the GLOW terminal itself - a command line for your vault with your AI model on the prompt line; the PLATO appearance, rose icon and rose graph shape; LaTeX <code>\(…\)</code> and <code>\[…\]</code> delimiters in the editor.</p>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.9</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.9</sparkle:version>
