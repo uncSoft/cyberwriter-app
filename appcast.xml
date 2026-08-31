@@ -6,6 +6,71 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.96</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.96</sparkle:version>
+            <sparkle:shortVersionString>3.96</sparkle:shortVersionString>
+            <pubDate>Sun, 30 Aug 2026 21:45:39 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.96/cyberWriter-Direct.zip" length="45056315" type="application/octet-stream" sparkle:edSignature="e6Nl7tPobgia++C3M4gcxNrxvKPeU1z7fHOq0UUuRUAvO2KxeG9cC756VnOiRrcWWs4oMPFje8AAS4108UwZDw=="/>
+            <description>
+                <![CDATA[
+<h2>cyberWriter 3.96</h2>
+
+<p>A first-launch and discoverability pass. Nothing here changes how you write -
+it changes what the first ninety seconds look like, and surfaces a few things
+that were only reachable if you already knew they existed.</p>
+
+<h3>The launch sequence</h3>
+<ul>
+    <li>The splash now <strong>leads</strong> the launch, fades in, and crossfades straight into your document at the same size and position as the window behind it. It used to open at a guessed size in the corner of the display and snap into place; on a wide window it also letterboxed itself with black bars down both sides.</li>
+    <li>It waits a beat before animating, so the opening of the animation isn't competing with window restoration for the main thread. Work that only pays off later - the web-process warmup, the signature check - now waits for the splash to finish rather than running underneath it.</li>
+    <li>First launch <em>asks</em> instead of deciding: start the 7-day trial, or enter a licence key you already hold. The trial used to start silently, which meant anyone arriving with a key in hand was never shown anywhere to put it.</li>
+    <li>Welcome arrives as the next beat and fades in, instead of snapping up the instant the splash clears - and it can no longer open partly off-screen on a smaller display.</li>
+</ul>
+
+<h3>The terminal has a button</h3>
+<ul>
+    <li>GLOW was a headline feature reachable only by <code>&#8963;`</code>, so most people never found it. There's now a <strong><code>&gt;_ Terminal</code></strong> button in the middle of the status bar - where the docked terminal itself opens - lit up while it's running.</li>
+</ul>
+
+<h3>Folders</h3>
+<ul>
+    <li><strong>Empty folders now appear in the vault.</strong> They were filtered out of the tree, which made <em>New Folder</em> look like it did nothing: the folder was created, the vault rescanned, and the tree simply left it out until you put a file in it. A folder holding only unsupported file types disappeared the same way.</li>
+    <li>New Folder is now reachable from the <strong>Files tab toolbar</strong> (the one that matters in a new or empty vault, where there's nothing to right-click), from a <strong>folder's</strong> menu, from a <strong>file's</strong> menu, and from the command palette.</li>
+</ul>
+
+<h3>Finding things</h3>
+<ul>
+    <li>Searching the Feature Guide or the command palette for <strong>two or more words</strong> now works. Both matched the whole query as one run of text, so "custom css" found nothing at all - even though the Custom Stylesheet card carries both words. "dark theme" and "export pdf" were equally invisible.</li>
+    <li><strong>Custom Stylesheet</strong> is called out properly: in the palette, from a help button in its own settings panel, and from the Themes card.</li>
+    <li>The tour covers what it was walking past - the GLOW terminal, drawings, version history, and what's actually inside the sidebar.</li>
+</ul>
+
+<h3>Also</h3>
+<ul>
+    <li>Raised undersized text across the sidebar and panels; the smallest labels were 7-9pt, under Apple's legibility floor. Vault files carry their type's colour, matching the iPad.</li>
+    <li>What's New is a hero plus a linked grid of every recent feature, each one click from its full card - and it no longer reappears for releases that only carry fixes.</li>
+    <li>The rate-and-review prompt no longer appears in the direct build; it's an App Store surface and was never meant to ship here.</li>
+    <li><strong>More from uncSoft</strong> in the Help menu, with an optional development-news signup. Email only, entirely optional, unrelated to your licence.</li>
+    <li>The user guide no longer documents <code>![alt](photo.jpg =300)</code> for image sizing - that isn't Markdown and never worked here, and the app's own warning about it stopped firing on documents that merely quote the syntax in a code block.</li>
+</ul>
+
+<h3>One disclosure</h3>
+<ul>
+    <li>Activating a licence now also records the key, a <strong>salted one-way hash</strong> of this Mac (never the machine identifier itself), and the app and OS version. It happens <em>once, when you activate</em> - never on launch, never in the background, and it carries nothing about your documents. The point is spotting a key that leaks onto hundreds of Macs. Activation itself never waits on it, so it works offline. The full list of every way bytes leave your Mac is in the privacy whitepaper.</li>
+</ul>
+
+<h3>Also recent (3.95)</h3>
+<ul>
+    <li><strong>Type <code>[[</code> and pick a note</strong> - wikilink autocomplete in both the Markdown editor and WYSIWYG, matching titles, then aliases, then folder paths.</li>
+    <li><strong>Figures and captions</strong> - an image on its own line becomes a numbered, captioned figure, renumbering as you reorder.</li>
+    <li><strong>Custom CSS</strong> - your stylesheet, applied to every preview and export.</li>
+</ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.95</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.95</sparkle:version>
