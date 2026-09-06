@@ -6,6 +6,50 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.97</title>
+            <link>https://cyberwriter.app</link>
+            <sparkle:version>3.97</sparkle:version>
+            <sparkle:shortVersionString>3.97</sparkle:shortVersionString>
+            <pubDate>Sat, 05 Sep 2026 21:58:56 -0400</pubDate>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.97/cyberWriter-Direct.zip" length="45118284" type="application/octet-stream" sparkle:edSignature="OkbUcPeuzULmh9xvypopRS3RQNLe61InmNmwhABjjpToAC4T13+zLrEhGfk0GZj6FrjW5tZ0nQFSGvALIdc9Dw=="/>
+            <description>
+                <![CDATA[
+<h2>cyberWriter 3.97</h2>
+
+<h3>Open a folder of code as a vault</h3>
+<ul>
+    <li>Point cyberWriter at a project folder and it reads like a vault: source, configuration, and Markdown all render and edit in place.</li>
+    <li>App bundles (<code>.app</code>, <code>.xcodeproj</code>, <code>.framework</code>) are listed as single items rather than opened as folders, and <code>node_modules</code>, <code>DerivedData</code>, <code>Pods</code>, and <code>__pycache__</code> are skipped — so you see the project, not its build innards.</li>
+</ul>
+
+<h3>Set up a vault in one pass</h3>
+<ul>
+    <li>Creating a vault now asks what you want in it: name it, start from PARA, Zettelkasten, or a work layout — or name your own folders — and everything is created together.</li>
+</ul>
+
+<h3>Vaults that live in a cloud drive</h3>
+<ul>
+    <li>Keep your vault in iCloud Drive, Google Drive, Dropbox, or any Files provider. Notes not yet downloaded to this Mac are recognised as such and fetched when opened, so search, links, and tags see the whole vault rather than only the local part.</li>
+</ul>
+
+<h3>File names that tell you apart</h3>
+<ul>
+    <li>Notes hide their <code>.md</code> extension; every other type shows its own, so <code>Plan.md</code>, <code>Plan.excalidraw</code>, and <code>Plan.pdf</code> no longer read as three identical rows.</li>
+    <li><strong>Settings → Vault → File Extensions</strong> shows them all if you prefer.</li>
+</ul>
+
+<h3>Also recent (3.96)</h3>
+<ul>
+    <li>Create folders from the Files tab toolbar, a right-click menu, or the command palette — and empty folders stay visible.</li>
+    <li>A <code>&gt;_ Terminal</code> button in the status bar for GLOW.</li>
+    <li>Multi-word search in the Feature Guide and command palette.</li>
+    <li>Larger sidebar text, and vault files coloured by type.</li>
+</ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>Version 3.96</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.96</sparkle:version>
