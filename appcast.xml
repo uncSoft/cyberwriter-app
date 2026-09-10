@@ -6,6 +6,48 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
+            <title>Version 3.98</title>
+            <pubDate>Wed, 09 Sep 2026 22:43:20 -0400</pubDate>
+            <sparkle:version>3.98</sparkle:version>
+            <sparkle:shortVersionString>3.98</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>cyberWriter 3.98</h2>
+
+                <h3>Move a note by dragging it</h3>
+                <ul>
+                    <li>Drag any note onto a folder in the vault sidebar to move it. Folders drag too — dropping one inside its own child is refused rather than detaching it from the vault.</li>
+                    <li>Drop into the file list, or onto the vault's name, to move something back out to the root. The name reads <strong>Move to &lt;vault&gt;</strong> while a drop is in range.</li>
+                    <li>A note that is open follows its file: the window title, the status-bar path and the folder relative images resolve against all move with it.</li>
+                </ul>
+
+                <h3>Front matter in TOML</h3>
+                <ul>
+                    <li>Notes opening with a <code>+++</code> block — the form Hugo and Zola write — are read like any other. The block stays out of the document, its fields are editable in Properties, and an edit writes TOML back rather than converting the file to YAML.</li>
+                    <li>Works in the source editor and the rich-text view alike.</li>
+                </ul>
+
+                <h3>GLOW completes note names</h3>
+                <ul>
+                    <li><code>TAB</code> now finishes an <code>@note</code> reference as well as a path, so attaching a note to an <code>ai</code> turn no longer means typing its name exactly.</li>
+                    <li>Names with spaces complete a word at a time — <code>@Mis</code> → <code>@"Mission </code> → <code>@"Mission Briefing"</code> — instead of stopping at the first space. When several notes match, TAB lists them.</li>
+                </ul>
+
+                <h3>Fixed</h3>
+                <ul>
+                    <li>The first characters typed into a new document could vanish. The editor did not always take the caret when a window opened, so anything typed before you clicked went nowhere.</li>
+                    <li>The line-number gutter could paint over the first couple of characters of every line, until you toggled line numbers off and on.</li>
+                    <li>A note created in the vault now offers the template picker. It only ever appeared for unsaved documents, so the one place a vault is certainly open was the one place the vault templates could not appear.</li>
+                    <li>Dates in Properties showed the day before the one written in the file, for anyone in a timezone behind UTC.</li>
+                    <li>The save dialog offered "Text Document" as the format for a <code>.md</code> file.</li>
+                    <li>Breaking a front matter fence while editing left an invisible first line with no way to get the text back.</li>
+                </ul>
+
+                <p style="opacity:0.75"><strong>Also recent (3.97):</strong> open a folder of code as a vault; set up a whole vault in one pass; vaults that live in iCloud, Google Drive or Dropbox; and file names that show their own extension so <code>Plan.md</code>, <code>Plan.excalidraw</code> and <code>Plan.pdf</code> no longer read as three identical rows.</p>
+            ]]></description>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.98/cyberWriter-Direct.zip" length="45418040" type="application/octet-stream" sparkle:edSignature="RIs5dhgQLgJP1ow50wyl+BKVDyXeEctfTczHuwSC0Hv0jLHVSK+5WmZsHHTDCJStG5fQBleJwU5l+kRCek7VCQ=="/>
+        </item>
+        <item>
             <title>Version 3.97</title>
             <link>https://cyberwriter.app</link>
             <sparkle:version>3.97</sparkle:version>
