@@ -6,23 +6,22 @@
         <description>cyberWriter Updates</description>
         <language>en</language>
         <item>
-            <title>Version 3.99</title>
+            <title>Version 3.995</title>
             <link>https://cyberwriter.app</link>
-            <sparkle:version>3.99</sparkle:version>
-            <sparkle:shortVersionString>3.99</sparkle:shortVersionString>
-            <pubDate>Thu, 10 Sep 2026 16:32:26 -0400</pubDate>
+            <sparkle:version>3.995</sparkle:version>
+            <sparkle:shortVersionString>3.995</sparkle:shortVersionString>
+            <pubDate>Thu, 10 Sep 2026 21:25:32 -0400</pubDate>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.99/cyberWriter-Direct.zip" length="45443751" type="application/octet-stream" sparkle:edSignature="h209BJqvMNAa9s5qGlSbO0ECoAmw4KijSz3QwtvqvmV5uzOQGHZT515L/19wTXZYQywy2Q8OcodS+T37XlncCw=="/>
+            <enclosure url="https://github.com/uncSoft/cyberwriter-app/releases/download/3.995/cyberWriter-Direct.zip" length="45445216" type="application/octet-stream" sparkle:edSignature="qqXpPpxbR+ddJpRZ9trp6enbhykILSrZaL4g489HQD9WDwHK/5XWTb6CqTCrdwrVESvSerSe/1D1M7FhNHiXDw=="/>
             <description>
                 <![CDATA[
-<h2>cyberWriter 3.99</h2>
-
-<p>A repair release for two problems in 3.98.</p>
+<h2>cyberWriter 3.995</h2>
 
 <h3>Fixed</h3>
 <ul>
-    <li><strong>File &gt; Open would not let you choose a Markdown file.</strong> Every <code>.md</code> was greyed out while PDFs and CSVs stayed selectable. Opening from Finder, or by dragging onto the icon, was never affected &mdash; but the app&rsquo;s own Open dialog refused the format it exists for. Whether it happened at all depended on which other Markdown editors were installed, which is why it reached release.</li>
+    <li><strong>File &gt; Open would not let you choose a Markdown file.</strong> Every <code>.md</code> was greyed out while PDFs and CSVs stayed selectable. Opening from Finder, or by dragging onto the icon, was never affected &mdash; but the app&rsquo;s own Open dialog refused the format it exists for. Whether it happened at all depended on which other Markdown editors were installed.</li>
     <li><strong>A large HTML file could freeze the app for minutes on open.</strong> Anything holding an embedded image or video &mdash; a saved page, an export &mdash; could stall on the way in. Small files opened normally, so the size at which it began was not obvious.</li>
+    <li><strong>Create Vault did nothing</strong> when pressed in the vault pane with no vault open, and creating one now opens it. Making a vault from the vault menu always worked; the button in the empty pane opened nothing.</li>
     <li>Closing a document window now releases the memory its preview was using. A long session moving between many documents held on to all of them.</li>
     <li>The launch animation no longer competes with the vault for the main thread, so it stays smooth on a large vault, and the window takes the keyboard when the app finishes opening.</li>
 </ul>
